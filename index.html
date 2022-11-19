@@ -15,10 +15,31 @@
     <header class="site-header py-4">
       <div class="container">
         <div class="d-flex justify-content-between">
-          <p class="m-0 fs-5">Where in the world</p>
+          <a class="logo" href="./index.html">
+            <picture>
+              <source
+                media="(max-width: 600px)"
+                srcset="./images/logo-mobile.svg"
+              />
+              <source
+                media="(max-width: 600px)"
+                srcset="./images/dark-logo-mobile.svg"
+              />
+              <img
+                class="logo-light"
+                src="./images/logo.svg"
+                alt="Site Logo"
+              />
+              <img
+                class="logo-night"
+                src="./images/dark-logo.svg"
+                alt="Site Logo"
+              />
+            </picture>
+          </a>
           <div class="d-flex align-items-center">
             <button class="mode-btn">
-              <p class="my-0 ms-2">Dark Mode</p>
+              <p class="mode-btn__text my-0 ms-2">Dark Mode</p>
             </button>
           </div>
         </div>
@@ -57,280 +78,418 @@
           <div class="row g-4 d-flex justify-content-lg-between">
             <div class="col-lg-4 col-xxl-3 col-md-6 col-12">
               <div>
-                <div class="card border-0 main-cards mx-auto" style="width: 18rem">
-                  <img
-                    src="./images/germany.jpg"
-                    class="card-img-top"
-                    alt="Germany flag"
-                  />
-                  <div class="card-body px-4 pt-4 pb-5">
-                    <h5 class="card-title fw-bold">Germany</h5>
-                    <ul class="card__list">
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2">
-                          <span class="fw-bold">Population:</span>
-                          81,770,900
-                        </p>
-                      </li>
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2 fw-light">
-                          <span class="fw-bold">Region:</span>
-                          Europe
-                        </p>
-                      </li>
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2">
-                          <span class="fw-bold">Capital:</span>
-                          Berlin
-                        </p>
-                      </li>
-                    </ul>
+                <a href="./info.html">
+                  <div
+                    class="card border-0 main-cards mx-auto"
+                    style="width: 18rem"
+                  >
+                    <img
+                      src="./images/germany.jpg"
+                      class="card-img-top"
+                      width="288"
+                      height="175"
+                      alt="Germany flag"
+                    />
+                    <div class="card-body px-4 pt-4 pb-5">
+                      <h5 class="card-title main-night-colors fw-bold">
+                        Germany
+                      </h5>
+                      <ul class="card__list">
+                        <li class="card__item">
+                          <p class="card__text main-light-colors mt-0 mb-2">
+                            <span class="fw-bold main-night-colors"
+                              >Population:</span
+                            >
+                            81,770,900
+                          </p>
+                        </li>
+                        <li class="card__item">
+                          <p
+                            class="card__text main-light-colors mt-0 mb-2 fw-light"
+                          >
+                            <span class="fw-bold main-night-colors"
+                              >Region:</span
+                            >
+                            Europe
+                          </p>
+                        </li>
+                        <li class="card__item">
+                          <p class="card__text main-light-colors mt-0 mb-2">
+                            <span class="fw-bold main-night-colors"
+                              >Capital:</span
+                            >
+                            Berlin
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4 col-xxl-3 col-md-6 col-12">
               <div>
-                <div class="card border-0 main-cards mx-auto" style="width: 18rem">
-                  <img
-                    src="./images/usa.jpg"
-                    class="card-img-top"
-                    alt="Germany flag"
-                  />
-                  <div class="card-body px-4 pt-4 pb-5">
-                    <h5 class="card-title fw-bold">United States of America</h5>
-                    <ul class="card__list">
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2">
-                          <span class="fw-bold">Population:</span>
-                          81,770,900
-                        </p>
-                      </li>
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2 fw-light">
-                          <span class="fw-bold">Region:</span>
-                          Europe
-                        </p>
-                      </li>
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2">
-                          <span class="fw-bold">Capital:</span>
-                          Berlin
-                        </p>
-                      </li>
-                    </ul>
+                <a href="./info.html">
+                  <div
+                    class="card border-0 main-cards mx-auto"
+                    style="width: 18rem"
+                  >
+                    <img
+                      src="./images/usa.jpg"
+                      class="card-img-top"
+                      width="288"
+                      height="175"
+                      alt="United States of America flag"
+                    />
+                    <div class="card-body px-4 pt-4 pb-5">
+                      <h5 class="card-title main-night-colors fw-bold">
+                        United States of America
+                      </h5>
+                      <ul class="card__list">
+                        <li class="card__item">
+                          <p class="card__text main-light-colors mt-0 mb-2">
+                            <span class="fw-bold main-night-colors"
+                              >Population:</span
+                            >
+                            81,770,900
+                          </p>
+                        </li>
+                        <li class="card__item">
+                          <p
+                            class="card__text main-light-colors mt-0 mb-2 fw-light"
+                          >
+                            <span class="fw-bold main-night-colors"
+                              >Region:</span
+                            >
+                            Europe
+                          </p>
+                        </li>
+                        <li class="card__item">
+                          <p class="card__text main-light-colors mt-0 mb-2">
+                            <span class="fw-bold main-night-colors"
+                              >Capital:</span
+                            >
+                            Berlin
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4 col-xxl-3 col-md-6 col-12">
               <div>
-                <div class="card border-0 main-cards mx-auto" style="width: 18rem">
-                  <img
-                    src="./images/brazil.jpg"
-                    class="card-img-top"
-                    alt="Germany flag"
-                  />
-                  <div class="card-body px-4 pt-4 pb-5">
-                    <h5 class="card-title fw-bold">Brazil</h5>
-                    <ul class="card__list">
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2">
-                          <span class="fw-bold">Population:</span>
-                          81,770,900
-                        </p>
-                      </li>
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2 fw-light">
-                          <span class="fw-bold">Region:</span>
-                          Europe
-                        </p>
-                      </li>
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2">
-                          <span class="fw-bold">Capital:</span>
-                          Berlin
-                        </p>
-                      </li>
-                    </ul>
+                <a href="./info.html">
+                  <div
+                    class="card border-0 main-cards mx-auto"
+                    style="width: 18rem"
+                  >
+                    <img
+                      src="./images/brazil.jpg"
+                      class="card-img-top"
+                      width="288"
+                      height="175"
+                      alt="Brazil flag"
+                    />
+                    <div class="card-body px-4 pt-4 pb-5">
+                      <h5 class="card-title main-night-colors fw-bold">
+                        Brazil
+                      </h5>
+                      <ul class="card__list">
+                        <li class="card__item">
+                          <p class="card__text main-light-colors mt-0 mb-2">
+                            <span class="fw-bold main-night-colors"
+                              >Population:</span
+                            >
+                            81,770,900
+                          </p>
+                        </li>
+                        <li class="card__item">
+                          <p
+                            class="card__text main-light-colors mt-0 mb-2 fw-light"
+                          >
+                            <span class="fw-bold main-night-colors"
+                              >Region:</span
+                            >
+                            Europe
+                          </p>
+                        </li>
+                        <li class="card__item">
+                          <p class="card__text main-light-colors mt-0 mb-2">
+                            <span class="fw-bold main-night-colors"
+                              >Capital:</span
+                            >
+                            Berlin
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4 col-xxl-3 col-md-6 col-12">
               <div>
-                <div class="card border-0 main-cards mx-auto" style="width: 18rem">
-                  <img
-                    src="./images/icelandia.jpg"
-                    class="card-img-top"
-                    alt="Germany flag"
-                  />
-                  <div class="card-body px-4 pt-4 pb-5">
-                    <h5 class="card-title fw-bold">Iceland</h5>
-                    <ul class="card__list">
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2">
-                          <span class="fw-bold">Population:</span>
-                          81,770,900
-                        </p>
-                      </li>
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2 fw-light">
-                          <span class="fw-bold">Region:</span>
-                          Europe
-                        </p>
-                      </li>
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2">
-                          <span class="fw-bold">Capital:</span>
-                          Berlin
-                        </p>
-                      </li>
-                    </ul>
+                <a href="./info.html">
+                  <div
+                    class="card border-0 main-cards mx-auto"
+                    style="width: 18rem"
+                  >
+                    <img
+                      src="./images/icelandia.jpg"
+                      class="card-img-top"
+                      width="288"
+                      height="175"
+                      alt="Iceland flag"
+                    />
+                    <div class="card-body px-4 pt-4 pb-5">
+                      <h5 class="card-title main-night-colors fw-bold">
+                        Iceland
+                      </h5>
+                      <ul class="card__list">
+                        <li class="card__item">
+                          <p class="card__text main-light-colors mt-0 mb-2">
+                            <span class="fw-bold main-night-colors"
+                              >Population:</span
+                            >
+                            81,770,900
+                          </p>
+                        </li>
+                        <li class="card__item">
+                          <p
+                            class="card__text main-light-colors mt-0 mb-2 fw-light"
+                          >
+                            <span class="fw-bold main-night-colors"
+                              >Region:</span
+                            >
+                            Europe
+                          </p>
+                        </li>
+                        <li class="card__item">
+                          <p class="card__text main-light-colors mt-0 mb-2">
+                            <span class="fw-bold main-night-colors"
+                              >Capital:</span
+                            >
+                            Berlin
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4 col-xxl-3 col-md-6 col-12">
               <div>
-                <div class="card border-0 main-cards mx-auto" style="width: 18rem">
-                  <img
-                    src="./images/afghanistan.jpg"
-                    class="card-img-top"
-                    alt="Germany flag"
-                  />
-                  <div class="card-body px-4 pt-4 pb-5">
-                    <h5 class="card-title fw-bold">Afghanistan</h5>
-                    <ul class="card__list">
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2">
-                          <span class="fw-bold">Population:</span>
-                          81,770,900
-                        </p>
-                      </li>
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2 fw-light">
-                          <span class="fw-bold">Region:</span>
-                          Europe
-                        </p>
-                      </li>
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2">
-                          <span class="fw-bold">Capital:</span>
-                          Berlin
-                        </p>
-                      </li>
-                    </ul>
+                <a href="./info.html">
+                  <div
+                    class="card border-0 main-cards mx-auto"
+                    style="width: 18rem"
+                  >
+                    <img
+                      src="./images/afghanistan.jpg"
+                      class="card-img-top"
+                      width="288"
+                      height="175"
+                      alt="Afghanistan flag"
+                    />
+                    <div class="card-body px-4 pt-4 pb-5">
+                      <h5 class="card-title main-night-colors fw-bold">
+                        Afghanistan
+                      </h5>
+                      <ul class="card__list">
+                        <li class="card__item">
+                          <p class="card__text main-light-colors mt-0 mb-2">
+                            <span class="fw-bold main-night-colors"
+                              >Population:</span
+                            >
+                            81,770,900
+                          </p>
+                        </li>
+                        <li class="card__item">
+                          <p
+                            class="card__text main-light-colors mt-0 mb-2 fw-light"
+                          >
+                            <span class="fw-bold main-night-colors"
+                              >Region:</span
+                            >
+                            Europe
+                          </p>
+                        </li>
+                        <li class="card__item">
+                          <p class="card__text main-light-colors mt-0 mb-2">
+                            <span class="fw-bold main-night-colors"
+                              >Capital:</span
+                            >
+                            Berlin
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4 col-xxl-3 col-md-6 col-12">
               <div>
-                <div class="card border-0 main-cards mx-auto" style="width: 18rem">
-                  <img
-                    src="./images/aisland.jpg"
-                    class="card-img-top"
-                    alt="Germany flag"
-                  />
-                  <div class="card-body px-4 pt-4 pb-5">
-                    <h5 class="card-title fw-bold">Åland Islands</h5>
-                    <ul class="card__list">
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2">
-                          <span class="fw-bold">Population:</span>
-                          81,770,900
-                        </p>
-                      </li>
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2 fw-light">
-                          <span class="fw-bold">Region:</span>
-                          Europe
-                        </p>
-                      </li>
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2">
-                          <span class="fw-bold">Capital:</span>
-                          Berlin
-                        </p>
-                      </li>
-                    </ul>
+                <a href="./info.html">
+                  <div
+                    class="card border-0 main-cards mx-auto"
+                    style="width: 18rem"
+                  >
+                    <img
+                      src="./images/aisland.jpg"
+                      class="card-img-top"
+                      width="288"
+                      height="175"
+                      alt="Aland Islands flag"
+                    />
+                    <div class="card-body px-4 pt-4 pb-5">
+                      <h5 class="card-title main-night-colors fw-bold">
+                        Åland Islands
+                      </h5>
+                      <ul class="card__list">
+                        <li class="card__item">
+                          <p class="card__text main-light-colors mt-0 mb-2">
+                            <span class="fw-bold main-night-colors"
+                              >Population:</span
+                            >
+                            81,770,900
+                          </p>
+                        </li>
+                        <li class="card__item">
+                          <p
+                            class="card__text main-light-colors mt-0 mb-2 fw-light"
+                          >
+                            <span class="fw-bold main-night-colors"
+                              >Region:</span
+                            >
+                            Europe
+                          </p>
+                        </li>
+                        <li class="card__item">
+                          <p class="card__text main-light-colors mt-0 mb-2">
+                            <span class="fw-bold main-night-colors"
+                              >Capital:</span
+                            >
+                            Berlin
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4 col-xxl-3 col-md-6 col-12">
               <div>
-                <div class="card border-0 main-cards mx-auto" style="width: 18rem">
-                  <img
-                    src="./images/albania.jpg"
-                    class="card-img-top"
-                    alt="Germany flag"
-                  />
-                  <div class="card-body px-4 pt-4 pb-5">
-                    <h5 class="card-title fw-bold">Albania</h5>
-                    <ul class="card__list">
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2">
-                          <span class="fw-bold">Population:</span>
-                          81,770,900
-                        </p>
-                      </li>
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2 fw-light">
-                          <span class="fw-bold">Region:</span>
-                          Europe
-                        </p>
-                      </li>
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2">
-                          <span class="fw-bold">Capital:</span>
-                          Berlin
-                        </p>
-                      </li>
-                    </ul>
+                <a href="./info.html">
+                  <div
+                    class="card border-0 main-cards mx-auto"
+                    style="width: 18rem"
+                  >
+                    <img
+                      src="./images/albania.jpg"
+                      class="card-img-top"
+                      width="288"
+                      height="175"
+                      alt="Albania flag"
+                    />
+                    <div class="card-body px-4 pt-4 pb-5">
+                      <h5 class="card-title main-night-colors fw-bold">
+                        Albania
+                      </h5>
+                      <ul class="card__list">
+                        <li class="card__item">
+                          <p class="card__text main-light-colors mt-0 mb-2">
+                            <span class="fw-bold main-night-colors"
+                              >Population:</span
+                            >
+                            81,770,900
+                          </p>
+                        </li>
+                        <li class="card__item">
+                          <p
+                            class="card__text main-light-colors mt-0 mb-2 fw-light"
+                          >
+                            <span class="fw-bold main-night-colors"
+                              >Region:</span
+                            >
+                            Europe
+                          </p>
+                        </li>
+                        <li class="card__item">
+                          <p class="card__text main-light-colors mt-0 mb-2">
+                            <span class="fw-bold main-night-colors"
+                              >Capital:</span
+                            >
+                            Berlin
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div class="col-lg-4 col-xxl-3 col-md-6 col-12">
               <div>
-                <div class="card border-0 main-cards mx-auto" style="width: 18rem">
-                  <img
-                    src="./images/algeria.jpg"
-                    class="card-img-top"
-                    alt="Germany flag"
-                  />
-                  <div class="card-body px-4 pt-4 pb-5">
-                    <h5 class="card-title fw-bold">Algeria</h5>
-                    <ul class="card__list">
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2">
-                          <span class="fw-bold">Population:</span>
-                          81,770,900
-                        </p>
-                      </li>
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2 fw-light">
-                          <span class="fw-bold">Region:</span>
-                          Europe
-                        </p>
-                      </li>
-                      <li class="card__item">
-                        <p class="card__text mt-0 mb-2">
-                          <span class="fw-bold">Capital:</span>
-                          Berlin
-                        </p>
-                      </li>
-                    </ul>
+                <a href="./info.html">
+                  <div
+                    class="card border-0 main-cards mx-auto"
+                    style="width: 18rem"
+                  >
+                    <img
+                      src="./images/algeria.jpg"
+                      class="card-img-top"
+                      width="288"
+                      height="175"
+                      alt="Algeria flag"
+                    />
+                    <div class="card-body px-4 pt-4 pb-5">
+                      <h5 class="card-title main-night-colors fw-bold">
+                        Algeria
+                      </h5>
+                      <ul class="card__list">
+                        <li class="card__item">
+                          <p class="card__text main-light-colors mt-0 mb-2">
+                            <span class="fw-bold main-night-colors"
+                              >Population:</span
+                            >
+                            81,770,900
+                          </p>
+                        </li>
+                        <li class="card__item">
+                          <p
+                            class="card__text main-light-colors mt-0 mb-2 fw-light"
+                          >
+                            <span class="fw-bold main-night-colors"
+                              >Region:</span
+                            >
+                            Europe
+                          </p>
+                        </li>
+                        <li class="card__item">
+                          <p class="card__text main-light-colors mt-0 mb-2">
+                            <span class="fw-bold main-night-colors"
+                              >Capital:</span
+                            >
+                            Berlin
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <script src="./js/main.js"></script>
 
     <script src="./bootstrap-5.2.2-dist/js/bootstrap.js"></script>
   </body>
