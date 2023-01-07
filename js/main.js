@@ -53,6 +53,18 @@ elForm.addEventListener('submit', (evt) => {
   }
 });
 
+elForm.addEventListener('input', () => {
+  if (elInput.value == '') {
+    fetch(`https://restcountries.com/v3.1/all`)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data) {
+          renderRegions(data, elList);
+        }
+      });
+  }
+});
+
 elSelect.addEventListener('change', () => {
   if (elSelect.value != 0) {
     if (elSelect.value == 1) {
