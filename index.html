@@ -2,20 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Document</title>
     <link
       rel="stylesheet"
       href="./bootstrap-5.2.2-dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="./css/main.css"
+    />
   </head>
   <body>
     <header class="site-header py-4">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <a class="logo" href="./index.html">
+          <a
+            class="logo"
+            href="./index.html"
+          >
             <picture>
               <source
                 media="(max-width: 600px)"
@@ -49,21 +61,32 @@
       <section class="hero">
         <div class="container">
           <form
-            class="d-flex justify-content-between flex-xxl-row flex-xl-row flex-lg-row flex-md-column flex-sm-column flex-column"
-            action="https://echo.htmlacademy.ru/"
+            class="js-form d-flex justify-content-between flex-xxl-row flex-xl-row flex-lg-row flex-md-column flex-sm-column flex-column"
             method="POST"
             autocomplete="off"
           >
-            <label class="search-label mb-lg-0 mb-md-5 mb-sm-5 mb-5">
-              <input
-                class="search form-control py-3 w-100"
-                type="text"
-                aria-label="Search for a country…"
-                placeholder="Search for a country…"
-              />
-            </label>
-            <select name="region" class="form-select filter-regions py-3 ps-4">
-              <option selected disabled>Filter by Region</option>
+            <div class="input-group">
+              <label class="search-label mb-lg-0 mb-md-5 mb-sm-5 mb-5">
+                <input
+                  class="search form-control py-3 w-100"
+                  type="text"
+                  aria-label="Search for a country…"
+                  placeholder="Search for a country…"
+                />
+              </label>
+              <button class="btn btn-primary d-block me-auto">Send</button>
+            </div>
+            <select
+              name="region"
+              class="filter-regions form-select py-3 ps-4"
+            >
+              <option
+                selected
+                disabled
+              >
+                Filter by Region
+              </option>
+              <option value="0">All</option>
               <option value="1">Africa</option>
               <option value="2">America</option>
               <option value="3">Asia</option>
@@ -76,58 +99,67 @@
       <section class="pb-5">
         <div class="container">
           <div class="row g-4 d-flex justify-content-lg-between">
-            <div class="col-lg-4 col-xxl-3 col-md-6 col-12">
-              <div>
-                <a href="./info.html">
-                  <div
-                    class="card border-0 main-cards mx-auto"
-                    style="width: 18rem"
-                  >
-                    <img
-                      src="./images/germany.jpg"
-                      class="card-img-top"
-                      width="288"
-                      height="175"
-                      alt="Germany flag"
-                    />
-                    <div class="card-body px-4 pt-4 pb-5">
-                      <h5 class="card-title main-night-colors fw-bold">
-                        Germany
-                      </h5>
-                      <ul class="card__list">
-                        <li class="card__item">
-                          <p class="card__text main-light-colors mt-0 mb-2">
-                            <span class="fw-bold main-night-colors"
-                              >Population:</span
+            <ul
+              class="js-list d-flex flex-wrap align-items-center justify-content-between"
+            ></ul>
+            <template class="js-template">
+              <div class="col-lg-4 col-xxl-3 col-md-6 col-12 p-3">
+                <div class="card">
+                  <a href="#">
+                    <div
+                      class="card border-0 main-cards mx-auto"
+                      style="width: 18rem"
+                    >
+                      <img
+                        src=""
+                        class="card-img-top"
+                        width="288"
+                        height="175"
+                        alt="Flag"
+                      />
+                      <div class="card-body px-4 pt-4 pb-3">
+                        <h5 class="card-title main-night-colors fw-bold">
+                          Card Title
+                        </h5>
+                        <ul class="card__list">
+                          <li class="card__item">
+                            <p
+                              class="population card__text main-light-colors mt-0 mb-2"
                             >
-                            81,770,900
-                          </p>
-                        </li>
-                        <li class="card__item">
-                          <p
-                            class="card__text main-light-colors mt-0 mb-2 fw-light"
-                          >
-                            <span class="fw-bold main-night-colors"
-                              >Region:</span
+                              <span class="fw-bold main-night-colors"
+                                >Population:</span
+                              >
+                              81,770,900
+                            </p>
+                          </li>
+                          <li class="card__item">
+                            <p
+                              class="region card__text main-light-colors mt-0 mb-2 fw-light"
                             >
-                            Europe
-                          </p>
-                        </li>
-                        <li class="card__item">
-                          <p class="card__text main-light-colors mt-0 mb-2">
-                            <span class="fw-bold main-night-colors"
-                              >Capital:</span
+                              <span class="fw-bold main-night-colors"
+                                >Region:</span
+                              >
+                              Europe
+                            </p>
+                          </li>
+                          <li class="card__item">
+                            <p
+                              class="capital card__text main-light-colors mt-0 mb-2"
                             >
-                            Berlin
-                          </p>
-                        </li>
-                      </ul>
+                              <span class="fw-bold main-night-colors"
+                                >Capital:</span
+                              >
+                              Berlin
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-xxl-3 col-md-6 col-12">
+            </template>
+            <!-- <div class="col-lg-4 col-xxl-3 col-md-6 col-12">
               <div>
                 <a href="./info.html">
                   <div
@@ -483,14 +515,12 @@
                   </div>
                 </a>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
     </main>
 
     <script src="./js/main.js"></script>
-
-    <script src="./bootstrap-5.2.2-dist/js/bootstrap.js"></script>
   </body>
 </html>
